@@ -6,6 +6,7 @@ import java.util.List;
 
 public class MainT3 {
     public static void main(String[] args) {
+        //Используя класс из семинара
         List<Animal> animals = new ArrayList<>();
         animals.add(new Animal("Cat", 5));
         animals.add(new Animal("Dog", 3));
@@ -17,7 +18,8 @@ public class MainT3 {
             System.out.println(animal);
         }
         System.out.println("-------------");
-        
+
+        //Вызываем статический метод сортировки по компаратору
         List<Animal> sortAnimals = UserSort.sortByComparator(animals, (animal1, animal2) -> animal1.getAge() - animal2.getAge());
 
         // Выводим отсортированный список животных
